@@ -6,5 +6,9 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
+
+      - name: Display directory contents
+        run: ls -al /home/runner/work/_actions/surkamaljhand/podcast-generator/Personal_Main/
+
       - name: Run Feed Generator
         uses: surkamaljhand/podcast-generator@Personal_Main
